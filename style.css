@@ -1,0 +1,93 @@
+ul,
+li,
+a,
+img,
+p,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* header */
+.header img {
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.sobre {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.sobre p {
+  font: 400 0.875rem/1.5 "Poppins", sans-serif;
+  color: #111;
+  max-width: 380px;
+}
+.contato {
+  max-width: max-content;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+}
+.contato h1 {
+  font: 600 3rem "Fraunces", serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contato ul {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 60px;
+  overflow-x: auto;
+}
+.contato ul img {
+  margin-bottom: 10px;
+}
+.contato ul a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font: 400 1.125rem "Fira Code", monospace;
+  color: #000;
+}
+.contato p {
+  text-align: center;
+  font: 400 1.5rem "Fraunces", serif;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.contato a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font: 700 1.125rem "Poppins", sans-serif;
+  color: #000;
+}
+footer p {
+  text-align: center;
+  font: 400 0.875rem "Fira Code", monospace;
+  color: #000;
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .sobre {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
